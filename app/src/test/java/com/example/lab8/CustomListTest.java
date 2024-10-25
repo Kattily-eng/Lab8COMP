@@ -46,10 +46,10 @@ ActivityScenarioRule<MainActivity>(MainActivity.class);
       assertFalse(CustomList.hascity(A));   
     }
   public void TestcountCities(){
-     assertEquals(6,CustomList.countcity(A));  
+     assertEquals(6,CustomList.getCount());  
     City A=new City("Edmonton","AB");
       cityDataList.add(A);  
       
-      assertEquals(7,CustomList.countcity(A));   
+      assertEquals(7,CustomList.getCount());   
     }  
 }
